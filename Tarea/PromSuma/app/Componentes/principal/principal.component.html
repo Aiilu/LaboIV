@@ -1,0 +1,21 @@
+<h1>Promedio de Edades</h1>
+<label for="EdadUno">Primera Edad:</label>
+<br>
+<input type="text" name="edadU" id="EdadUno" placeholder="Edad" [(ngModel)]="this.miSuma.edad1">
+<br>
+<br>
+<label for="EdadDos">Segunda Edad:</label>
+<br>
+<input type="text" name="edadD" id="EdadDos" placeholder="Edad" [(ngModel)]="this.miSuma.edad2">
+<br>
+<br>
+<input type="button" value="Calcular" (click)="this.miSuma.calcularResultado()">
+&nbsp;
+<input type="button" value="Limpiar" (click)="this.limpiarBotones()">
+<br>
+<h3>Resultados:</h3>
+<p>Promedio</p>
+<input type="text" readonly [value]="this.miSuma.promedio">
+<p>Suma</p>
+<input type="text" readonly [value]="this.miSuma.suma">
+<br>
